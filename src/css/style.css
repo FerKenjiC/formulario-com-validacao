@@ -1,0 +1,111 @@
+.conteiner {
+    min-height: 100vh;
+    background: url(../imagens/bg-repeat.jpg) repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteiner .informacoes{
+    width: 300px;
+    height: 111px;
+    color: #fff;
+    text-shadow: #000 1px 0 10px;  
+}
+
+.informacoes .titulo{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.informacoes .texto {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.conteiner .formulario {
+    background-color: #fff;
+    width: 340px;
+    height: 378px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formulario .input {
+    width: 289.01px;
+    height: 35.11px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    /* margin-bottom: 15px; */
+}
+
+.formulario .input::placeholder {
+    padding: 8px 9px;
+    color: #a8a8a8;
+}
+
+.formulario .input.mensagem {
+    height: 100px;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+}
+
+.formulario .aviso {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.formulario .enviar {
+    background-color: #3ccc87;
+    width: 298px;
+    height: 41px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    margin-top: 5px;
+}
+
+.formulario .enviar:hover {
+    transform: scale(1.1);
+    background-color: #b348b3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.formulario .input.correto {
+    border: 1px solid #00c22b;
+}
+
+.formulario .input.incorreto{
+    border: 1px solid #f52e2e;
+}
+
+.formulario .campo-obrigatorio {
+    color: #f52e2e;
+    font-size: 8px;
+    font-weight: 400;
+    opacity: 0;
+    margin-bottom: 5px;
+}
+
+.formulario .campo-obrigatorio.incorreto{
+    opacity: 1;
+}
